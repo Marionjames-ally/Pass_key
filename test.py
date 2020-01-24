@@ -1,4 +1,5 @@
-# import unittest
+import unittest
+from user import User
 
 class TestUser(unittest.TestCase):
     '''
@@ -7,3 +8,20 @@ class TestUser(unittest.TestCase):
     Args:
         unittest.TestCase :TestCase class that helps in creating a test class
     '''
+    def setUp(self):
+        '''
+        set up method to run before each test cases
+        '''
+        self.new_user = User('mari','james','0712345678')
+
+    def test_init(self):
+        '''
+        test_init case to test if the object is initialized properly
+        '''
+        self.assertEqual(self.new_user.f_name,"mari")
+        self.assertEqual(self.new_user.l_name,"james")
+        self.assertEqual(self.new_user.pswrd,"0712345678")
+
+
+if __name__ =='__main__':
+    unittest.main()
