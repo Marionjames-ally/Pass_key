@@ -20,7 +20,13 @@ class TestUser(unittest.TestCase):
         '''
         self.assertEqual(self.new_user.f_name,"mari")
         self.assertEqual(self.new_user.l_name,"james")
-        self.assertEqual(self.new_user.pswrd,"0712345678")
+        self.assertEqual(self.new_user.password,"0712345678")
+
+    def test_save_user(self):
+        '''
+        Function to test if a newly created user instance is saved
+		'''
+        User.users_list.append(self)
 
 
 if __name__ =='__main__':
