@@ -89,7 +89,7 @@ class Credential:
 				return credential
 
 	@classmethod
-	def copy_credential(cls,site_name):
+	def copy_credential(cls,site_name,password):
 		'''
 		Class method that copies a credential's info after the credential's site name is entered
 		'''

@@ -15,6 +15,9 @@ There are no known bugs in the application
 ## Developer 
 Marion James Ochieng'
 
+## CODEBEAT BADGE
+[![codebeat badge](https://codebeat.co/badges/3e5944b4-53cc-4933-af55-e9f05754c9a3)](https://codebeat.co/projects/github-com-marionjames-ally-pass_key-master)
+
 ## contact
 email : marionjames2018@gmail.com
 
