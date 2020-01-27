@@ -58,6 +58,12 @@ class Credential:
 		'''
 		# global users_list
 		Credential.credentials_list.append(self)
+
+	def delete_credentials(self):
+		'''
+		function to delete my prefered credential
+		'''
+		Credential.credentials_list.remove(self)
 	
 	def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
 		'''
