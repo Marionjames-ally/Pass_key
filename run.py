@@ -48,6 +48,12 @@ def display_credentials(user_name):
 	Function to display credentials saved by a user
 	'''
 	return Credential.display_credentials(user_name)
+
+def delete_credentials(contact):
+    '''
+    Function to delete a contact
+    '''
+    Credential.delete_credentials()
 	
 def copy_credential(site_name):
 	'''
@@ -105,7 +111,7 @@ def main():
 				print(' ')
 				while True:
 					print("-"*60)
-					print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n ex-Exit')
+					print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n del-delete a credential \n ex-Exit ')
 					short_code = input('Enter a choice: ').lower().strip()
 					print("-"*60)
 					if short_code == 'ex':
@@ -149,7 +155,13 @@ def main():
 						else:
 							print(' ')
 							print("You don't seem to have any credentials saved yet")
-							print(' ')
+							print(' ')#
+
+					elif short_code == 'del':
+						chosen_site = input('Enter the site name for the credential---')
+						print('credential deleted')
+
+
 					elif short_code == 'copy':
 						print(' ')
 						chosen_site = input('Enter the site name for the credential password to copy: ')
