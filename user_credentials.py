@@ -29,6 +29,7 @@ class Credential:
 	# Class Variables
 	credentials_list =[]
 	user_credentials_list = []
+
 	@classmethod
 	def check_user(cls,first_name,password):
 		'''
@@ -58,7 +59,7 @@ class Credential:
 		# global users_list
 		Credential.credentials_list.append(self)
 	
-	def generate_password(self,size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
+	def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
 		'''
 		Function to generate an 8 character password for a credential
 		'''
